@@ -21,6 +21,7 @@ CREATE TABLE Apps (
     descricao TEXT,
     url_instalacao VARCHAR(255) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL,
+    central_uuid STRING NOT NULL,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
