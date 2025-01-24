@@ -33,6 +33,7 @@ CREATE TABLE ContaApps (
     usuario_id INT REFERENCES Usuarios(id) ON DELETE CASCADE,
     app_id INT REFERENCES Apps(id) ON DELETE CASCADE,
     ativo BOOLEAN DEFAULT TRUE,
+    desconto INT DEFAULT "0",
     data_ativacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     data_desativacao TIMESTAMP
 );
